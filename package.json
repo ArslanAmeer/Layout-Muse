@@ -1,0 +1,35 @@
+{
+  "name": "layout-muse",
+  "version": "1.0.0",
+  "description": "Adobe-muse inspired Layout made with Pure HTML5, CSS3 and JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArslanAmeer/Layout-Muse.git"
+  },
+  "author": "Arslan Ameer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArslanAmeer/Layout-Muse/issues"
+  },
+  "homepage": "https://github.com/ArslanAmeer/Layout-Muse#readme",
+  "dependencies": {
+    "npm-check-updates": "^2.14.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-less": "^3.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify-es": "^1.0.1",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-glob": "^2.0.1"
+  }
+}
