@@ -1,0 +1,5 @@
+## -This Layout is Inspired by Adobe Muse - Site Of The Day webpage.
+
+## -It is only a practice to achieve such layout with HTML5, CSS/LESS and JS/ES6.
+
+## -No Concern with adobe or any such intention to break copyright law.
