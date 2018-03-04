@@ -68,10 +68,10 @@ var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
 
     gulp.task("serve",function(){
         browserSync.init({server: "dist"});
+        gulp.watch("src/assets/less/**/*.less", ["less"]);
         gulp.watch("src/*.html",["Html-Minify"]);
         gulp.watch("src/assets/js/*.js",["Js-Minify"]);
         gulp.watch("src/assets/images/*",["Image-Minify"]);
-        gulp.watch("src/assets/less/**/*.less", ["less"]);
         gulp.watch("dist/assets/*html").on("change", browserSync.reload);
     });
 
