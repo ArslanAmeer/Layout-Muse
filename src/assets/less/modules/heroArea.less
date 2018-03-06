@@ -83,17 +83,10 @@
             font-weight: lighter;
         }
         button {
-            background-color: rgb(112, 163, 15);
-            border: none;
-            cursor: pointer;
+
+            .button;
             padding: 15px 25px;
-            border-radius: 5px;
-            font-size: .85em;
-            font-weight: bolder;
             margin-top: 30px;
-            &:hover{
-                background-color: rgb(136, 194, 27);
-            }
         }
     }
 }
@@ -128,7 +121,6 @@
             h1 {
                 font-size: 3.2em;
             }
-           
         }
     }
 }
@@ -142,17 +134,16 @@
 /* Larger than Desktop */
 
 @media (min-width: 1140px) {
-    .hero-area {        
+    .hero-area {
         .nav-bar {
             flex-direction: row;
             justify-content: space-between;
             flex-shrink: 0;
         }
-        .hero-content{
-            h1{
+        .hero-content {
+            h1 {
                 margin-top: 50px;
             }
-            
         }
     }
 }
@@ -161,7 +152,7 @@
 /* Larger than Desktop HD */
 
 @media (min-width: 1366px) {
-    .hero-area{
+    .hero-area {
         height: 65vh;
     }
 }
