@@ -24,7 +24,7 @@ var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
 
     gulp.task("Html-Minify",function(){
         gulp.src("src/*.html")
-            .pipe(htmlMin())
+            .pipe(htmlMin({collapseWhitespace: true}))
             .pipe(gulp.dest("dist/"))
             .pipe(browserSync.stream());
     });
