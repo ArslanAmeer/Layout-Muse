@@ -1,0 +1,86 @@
+.cards {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 8% 0 5% 0;
+        h2 {
+            .reset-MP;
+            white-space: normal;
+        }
+        .ddl {
+            display: flex;
+            align-content: center;
+            select {
+                .reset-MP;
+                height: 30px;
+                font-size: .6em;
+                margin: 0 15px;
+            }
+            a:hover{
+                color: @color-green;
+            }
+            small {
+                .reset-MP;
+                font-size: .6em;
+                margin-top: 5px;
+            }
+        }
+    }
+    .cards-container {
+        font-weight: lighter; 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;  
+        margin-top: -20px;   
+        div.card {
+            .reset-MP;
+            width: 270px;         
+            margin-top: 20px;   
+            background-color: rgb(240, 240, 240);
+            border: 1px solid rgb(230, 230, 230);           
+            border-radius: 5px;
+            img {
+                width: 100%;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            figcaption {
+                padding: 20px 20px;                
+                height: 110px;
+                // white-space: pre-wrap;
+                -webkit-box-shadow: 0px 1px 5px 0px rgba(200, 200, 200, 1);
+                -moz-box-shadow: 0px 1px 5px 0px rgba(200, 200, 200, 1);
+                box-shadow: 0px 1px 5px 0px rgba(200, 200, 200, 1);
+                a {
+                    .reset-MP;
+                    font-size: .9em;
+                    &:hover{
+                        opacity: 0.7;
+                    }
+                }
+                small {
+                    display: block;
+                    font-size: .6em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .cards{
+        header{
+            flex-flow: column nowrap;
+            .ddl{
+                flex-flow: column nowrap;
+                text-align: center;
+                // align-items: center;
+            }
+        }
+    }
+}
