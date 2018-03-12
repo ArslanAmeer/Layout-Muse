@@ -13,6 +13,7 @@ const sourceMap = require("gulp-sourcemaps");
 const imageMin = require("gulp-imagemin");
 const rename = require("gulp-rename");
 const browserSync = require("browser-sync").create();
+const ghpages = require("gulp-gh-pages");
 
 var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
 
@@ -61,6 +62,15 @@ var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
             .pipe(sourceMap.write("/maps"))
             .pipe(gulp.dest("dist/assets/css/"))
             .pipe(browserSync.stream());
+    });
+
+    // Deploy on Github-Pages Task
+
+    gulp.task("deploy", function(){
+        return gulp.src("./dist/**/*")
+                    .pipe(ghpages({
+                        message: "Update by Gulp-Task"
+                    }));
     });
 
 //  STEP - 3
