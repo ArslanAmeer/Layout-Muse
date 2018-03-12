@@ -1,6 +1,6 @@
 .hero-area {
     // display: none;
-    height: 80vh;
+    height: 75vh;
     border: 1px solid black;
     background-image: url('/assets/images/header-bg.jpg');
     background-position: 50% 60%;
@@ -63,7 +63,7 @@
             margin: 0 15px;
             &:nth-child(4) {
                 a {
-                    width: 130px;
+                    width: 135px;
                 }
             }
         }
@@ -91,8 +91,18 @@
     }
 }
 
+@media (orientation: landscape){
+    .hero-area{
+        height: 90vh;
+    }
+}
+
 //* Larger than Mobile */
-@media (min-width: 400px) {}
+@media (min-width: 482px)  {
+    .hero-area{
+        // display: block;
+    }
+}
 
 
 /* Larger than Phablet (Phone & Tablet) */
@@ -128,7 +138,7 @@
 
 /* Larger than Tablet */
 
-@media (min-width: 1030px) {}
+@media (min-width: 1030px){}
 
 
 /* Larger than Desktop */
