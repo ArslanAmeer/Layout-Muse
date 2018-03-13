@@ -77,7 +77,12 @@ var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
 //  Watch and Serve Task
 
     gulp.task("serve",function(){
-        browserSync.init({server: "dist"});
+        browserSync.init({
+            server: "dist",
+            port: 2712,
+            host: "192.168.10.66",
+            browser: "Firefox"
+        });
         gulp.watch("src/assets/less/**/*.less", ["less"]);
         gulp.watch("src/*.html",["Html-Minify"]);
         gulp.watch("src/assets/js/*.js",["Js-Minify"]);
