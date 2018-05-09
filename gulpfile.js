@@ -87,7 +87,7 @@ var lessPrefix = new autoPrefixLess({ browsers: ["last 2 versions"]});
         gulp.watch("src/*.html",["Html-Minify"]);
         gulp.watch("src/assets/js/*.js",["Js-Minify"]);
         gulp.watch("src/assets/images/*",["Image-Minify"]);
-        gulp.watch("dist/assets/*html").on("change", browserSync.reload);
+        gulp.watch("dist/assets/*.html").on("change", browserSync.reload);
     });
 
 // STEP - 4
